@@ -11,10 +11,11 @@ import org.apache.kafka.common.TopicPartition;
 import org.springframework.kafka.support.Acknowledgment;
 
 /**
- * @author caishumin
+ * 批量模式的ACK
+ *
+ * @author Simon Cai
  * @version 1.0
- * @description
- * @createTime 2025年03月22日 10:41:00
+ * @since 2025-05-10
  */
 public class BatchDynamicAcknowledgment implements Acknowledgment {
 

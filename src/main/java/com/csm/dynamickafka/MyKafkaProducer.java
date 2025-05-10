@@ -10,16 +10,18 @@ import org.springframework.stereotype.Component;
 import java.util.UUID;
 
 /**
- * @author shumincai
- * @date 2025/5/10
- * @description
- **/
+ * Kafka生产者
+ *
+ * @author Simon Cai
+ * @version 1.0
+ * @since 2025-05-10
+ */
 @Component
 public class MyKafkaProducer {
 
-    private KafkaTemplate<String, String> kafkaTemplate;
+    private final KafkaTemplate<String, String> kafkaTemplate;
 
-    private DynamicKafkaProducerManager dynamicKafkaProducerManager;
+    private final DynamicKafkaProducerManager dynamicKafkaProducerManager;
 
     public MyKafkaProducer(KafkaTemplate<String, String> kafkaTemplate, DynamicKafkaProducerManager dynamicKafkaProducerManager) {
         this.kafkaTemplate = kafkaTemplate;

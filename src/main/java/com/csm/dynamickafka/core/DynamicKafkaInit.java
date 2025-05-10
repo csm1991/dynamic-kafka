@@ -19,10 +19,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 /**
- * @author caishumin
+ * 动态Kafka的初始化类
+ *
+ * @author Simon Cai
  * @version 1.0
- * @description
- * @createTime 2025年03月22日 15:02:00
+ * @since 2025-05-10
  */
 @Component
 @Slf4j

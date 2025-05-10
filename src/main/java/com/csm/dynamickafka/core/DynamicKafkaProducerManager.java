@@ -6,6 +6,13 @@ import org.springframework.stereotype.Component;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * 生产者管理器
+ *
+ * @author Simon Cai
+ * @version 1.0
+ * @since 2025-05-10
+ */
 @Component
 public class DynamicKafkaProducerManager {
     private final Map<String, String> producerTransferConfigMap = new ConcurrentHashMap<>();

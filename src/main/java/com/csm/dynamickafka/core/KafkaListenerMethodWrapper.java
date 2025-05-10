@@ -7,10 +7,11 @@ import lombok.Getter;
 import org.springframework.kafka.annotation.KafkaListener;
 
 /**
- * @author caishumin
+ * Kafka消费者监听信息缓存实体
+ *
+ * @author Simon Cai
  * @version 1.0
- * @description
- * @createTime 2025年03月21日 14:06:00
+ * @since 2025-05-10
  */
 @Getter
 @AllArgsConstructor

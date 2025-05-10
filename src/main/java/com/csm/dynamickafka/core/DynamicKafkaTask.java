@@ -15,10 +15,11 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 /**
- * @author caishumin
+ * 动态Kafka的定时更新task，用于同步内存与数据库配置
+ *
+ * @author Simon Cai
  * @version 1.0
- * @description
- * @createTime 2025年03月24日 11:20:00
+ * @since 2025-05-10
  */
 @Component
 @Slf4j
@@ -95,6 +96,7 @@ public class DynamicKafkaTask {
                         + configDynamicKafka.getTenantId();
                 if (key.equalsIgnoreCase(baseTopic)) {
                     exist = true;
+                    break;
                 }
             }
 

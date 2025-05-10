@@ -20,10 +20,11 @@ import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Component;
 
 /**
- * @author caishumin
+ * 消费者管理器
+ *
+ * @author Simon Cai
  * @version 1.0
- * @description
- * @createTime 2025年03月20日 17:51:00
+ * @since 2025-05-10
  */
 @Component
 @Slf4j
